@@ -1,0 +1,157 @@
+@charset "UTF-8";
+html{
+    font-size: 0.5208vw;
+    scroll-behavior: smooth;
+}
+
+*:focus {
+    outline: none;
+}
+
+body, h1, h2, h3, h4, h5, p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Yu Gothic", "游ゴシック体", "メイリオ", 'Meiryo', "Hiragino Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+ul{
+    list-style: none;
+}
+
+h1{
+    line-height: 1;
+}
+
+h2{
+    line-height: 1;
+}
+
+p{
+    font-size: 2.2rem;
+    color: #353535;
+}
+
+.pc_only{
+    display: block;
+}
+
+.pc_flex{
+    display: flex;
+}
+
+.pc_inline{
+    display: inline;
+}
+
+.sp_flex{
+    display: none;
+}
+
+.sp_inline{
+    display: none;
+}
+
+.sp_only{
+    display: none;
+}
+
+/* header */
+header{
+    background: #B9DBF2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 17rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+header > img{
+    width: 13.4rem;
+    margin-bottom: 22rem;
+}
+
+header .sns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 6.7rem;
+}
+
+header .sns a:first-child{
+    margin-bottom: 4.16rem;
+}
+
+header .sns a img{
+    width: 4.677rem;
+}
+
+header .btn{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 50%;
+    left: 17rem;
+    transform: translate(50%, -40%);
+    
+}
+
+header .btn a{
+    width: 3.8rem;
+    height: 3.418rem;
+    margin-bottom: 5rem;
+    background: url("../img/btn.svg") no-repeat center center/contain;
+    transition: all .2s ease-in-out;
+}
+
+header .btn a:hover{
+    background: url("../img/btn_active.svg") no-repeat center center/contain;
+    transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width: 767px){
+    html{
+        font-size: 2.667vw;
+    }
+
+    .pc_only{
+        display: none !important;
+    }
+    
+    .sp_only{
+        display: block;
+    }
+
+    .pc_flex{
+        display: none !important;
+    }
+
+    .sp_flex{
+        display: flex;
+    }
+
+    .pc_inline{
+        display: none;
+    }
+
+    .sp_inline{
+        display: inline;
+    }
+}
