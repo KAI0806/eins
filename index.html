@@ -51,13 +51,13 @@
                 </div>
                 
                 <picture>
-                    <img src="assets/img/content01_img.jpg" alt="">
+                    <img src="assets/img/content01_img.jpg" alt="コンセプト1">
                 </picture>
             </div>
 
             <div class="content02">
                 <picture>
-                    <img src="assets/img/content02_img.jpg" alt="">
+                    <img src="assets/img/content02_img.jpg" alt="コンセプト2">
                 </picture>
 
                 <p>
@@ -80,9 +80,9 @@
                 </div>
 
                 <div class="right">
-                    <h3>COMPANY<br/>会社概要</h3>
+                    <h3>COMPANY<br/><small>会社概要</small></h3>
                     <picture>
-                        <img src="" alt="">
+                        <img src="assets/img/summary_img.jpg" alt="会社概要">
                     </picture>
                 </div>
             </div>
@@ -116,27 +116,36 @@
 
             <form class="formrun" action="https://form.run/api/v1/r/0ieo89qmodshkn7qqh3dgoyt" method="post">
                 <!-- ↓自由に要素を追加・編集することができます -->
-                <div>
+                <div class="row">
                   <label>お名前</label>
-                  <input name="お名前" type="text">
+                  <input name="お名前" type="text" data-formrun-required>
+                </div>
+
+                <div class="row">
+                    <label>フリガナ</label>
+                    <input name="フリガナ" type="text" data-formrun-required>
                 </div>
               
-                <div>
-                  <label>メールアドレス [必須]</label>
+                <div class="row">
+                  <label>メールアドレス </label>
                   <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
-                  <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-2">お問合せ種別</label>
+                    <div class="col-sm-10">
+                      <select class="form-control form-control-lg" name="お問合せ種別" data-formrun-required>
+                        <option value>ー選択してくださいー</option>
+                        <option value="商品に関してのお問合せ">商品に関してのお問合せ</option>
+                        <option value="求人に関してのお問合せ">求人に関してのお問合せ</option>
+                        <option value="その他のお問合せ">その他のお問合せ</option>
+                      </select>
+                    </div>
                 </div>
               
-                <div>
-                  <label>お問い合わせ [必須]</label>
-                  <textarea name="お問い合わせ" data-formrun-required></textarea>
-                  <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
-                </div>
-              
-                <div>
-                  <label>個人情報利用同意 [必須]</label>
-                  <input type="checkbox" name="個人情報利用同意" data-formrun-required>
-                  <div data-formrun-show-if-error="個人情報利用同意">同意してください</div>
+                <div class="row">
+                  <label>お問い合わせ内容</label>
+                  <textarea name="お問い合わせ内容"></textarea>
                 </div>
               
                 <!-- ボット投稿をブロックするためのタグ -->
@@ -146,7 +155,7 @@
                   <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
                 </div>
               
-                <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
+                <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信する</button>
             </form> 
         </section>
     </main>

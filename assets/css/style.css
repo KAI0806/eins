@@ -79,6 +79,7 @@
 #concept{
     position: relative;
     padding-top: 10.9rem;
+    margin-bottom: 2.7rem;
 }
 
 #concept::before{
@@ -168,6 +169,11 @@
     position: relative;
 }
 
+#concept .content02 picture{
+    position: relative;
+    z-index: -1;
+}
+
 #concept .content02 picture img{
     width: 57.3%;
 }
@@ -179,6 +185,269 @@
     width: 43.9rem;
     padding: 12.2rem 6.3rem 4.9rem;
     background: #B9DBF2;
+}
+
+#concept .content02 p::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6.7rem;
+    height: 5.5rem;
+    transform: translate(-25%, -25%) rotateZ(-60deg);
+    background: url("../img/bone.svg") no-repeat center center/contain;
+}
+
+#concept .content02 p::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 77rem;
+    height: 44.64rem;
+    transform: translate(-31%, 50%);
+    z-index: -1;
+    background: url("../img/content02_txt.svg") no-repeat center center/contain;
+}
+
+/* summary */
+
+#summary{
+    margin-top: -15.2rem;
+    margin-bottom: 21.5rem;
+}
+
+
+#summary h2{
+    font-size: 20rem;
+    font-family: 'Bebas Kai';
+    font-weight: normal;
+    text-align: right;
+    margin-right: 9.3rem;
+    line-height: .9;
+}
+
+#summary h2 small{
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-right: 23.7rem;
+    font-weight: "メイリオ", 'Meiryo', "Yu Gothic", "游ゴシック体", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+#summary .wrap{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 4rem;
+    position: relative;
+    padding-bottom: 12rem;
+}
+
+#summary .wrap::before{
+    content: "";
+    position: absolute;
+    width: 92.3rem;
+    height: 100%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+    background: #B9DBF2;
+}
+
+#summary .wrap::after{
+    content: "COMPANY INFO";
+    position: absolute;
+    font-size: 16rem;
+    font-weight: normal;
+    font-family: 'Bebas Kai';
+    width: max-content;
+    color: #FFFFFF;
+    transform: rotateZ(90deg) translate(-8rem, -120%);
+    right: 0;
+    top: 50%;
+}
+
+#summary .wrap .left{
+    position: relative;
+}
+
+#summary .wrap .left::before{
+    content: "";
+    position: absolute;
+    width: 88.8rem;
+    height: 3.76rem;
+    background: url("../img/wave.svg") no-repeat center center/contain;
+    bottom: -6.3rem;
+    transform: translate(-20%, 50%);
+}
+
+#summary .wrap .left::after{
+    content: "";
+    position: absolute;
+    width: 33.1rem;
+    height: 24.65rem;
+    opacity: .15;
+    top: 0;
+    left: 0;
+    transform: translate(-10%, -70%);
+    background: url("../img/dog_icon_black.svg") no-repeat center center/contain;
+}
+
+#summary .wrap .left > div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: .95rem;
+    border-bottom: solid .2rem #707070;
+    margin-bottom: 4.15rem;
+}
+
+#summary .wrap .left > div:last-child{
+    margin-bottom: .5rem;
+}
+
+#summary .wrap .left > div h4{
+    font-size: 2.2rem;
+    font-weight: bold;
+    width: 12.6rem;
+}
+
+#summary .wrap .right{
+    position: relative;
+}
+
+#summary .wrap .right h3{
+    text-align: right;
+    font-size: 5.2rem;
+    font-family: 'Bebas Kai';
+    font-weight: normal;
+    line-height: .8;
+    margin-bottom: 2.9rem;
+    margin-top: 9.3rem;
+}
+
+#summary .wrap .right h3 small{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-right: 6.7rem;
+    font-family: "メイリオ", 'Meiryo', "Yu Gothic", "游ゴシック体", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+#summary .wrap .right img{
+    width: 64.2rem;
+}
+
+/* recruit */
+#recruit{
+    border-top: solid 19rem #B9DBF2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16.6rem 0;
+    margin-bottom: 6.8rem;
+    background: url("../img/recruit_bg.jpg") no-repeat center center/cover;
+}
+
+#recruit::before{
+    content: "";
+    position: absolute;
+    width: 101.65rem;
+    height: 33.8rem;
+    left: 0;
+    top: -19rem;
+    transform: translateY(-70%);
+    background: url("../img/recruit_txt.svg") no-repeat center center/contain;
+}
+
+#recruit::after{
+    content: "";
+    position: absolute;
+    width: 63.12rem;
+    height: 38.9rem;
+    right: 14.54rem;
+    top: -19rem;
+    transform: translateY(-10%);
+    background: url("../img/recruit_title.svg") no-repeat center center/contain;
+}
+
+#recruit .wrap{
+    width: 61.25%;
+    background: rgba(255, 255, 255, 70%);
+    padding: 10.9rem 0 14.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#recruit .wrap::before{
+    content: "";
+    position: absolute;
+    width: 13.3rem;
+    height: 41.9rem;
+    left: 0;
+    top: 50%;
+    transform: translate(-10%, -50%);
+    background: url("../img/conditions.svg") no-repeat center center/contain;
+}
+
+#recruit .wrap::after{
+    content: "";
+    position: absolute;
+    width: 82.61rem;
+    height: 15.48rem;
+    bottom: 0;
+    left: 50%;
+    filter: drop-shadow( -.2rem .1rem 0 #A3A7AB);
+    transform: translateX(-48%);
+    background: url("../img/dogs.svg") no-repeat center center/contain;
+}
+
+#recruit .wrap h2{
+    font-size: 3.3rem;
+    margin-bottom: 6.9rem;
+}
+
+#recruit .wrap p{
+    line-height: 2;
+}
+
+/* contact */
+
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact h2{
+    font-size: 4rem;
+    font-family: 'Bebas Kai';
+    font-weight: normal;
+    margin-bottom: 6.4rem;
+}
+
+#contact > p{
+    text-align: center;
+    line-height: 1.8;
+}
+
+#contact > p:nth-child(4){
+    font-size: 1.8rem;
+    margin-bottom: 6.4rem;
+}
+
+#contact > p+p{
+    margin-top: 3rem;
+}
+
+#contact form{
+    width: 44%;
+    margin: auto;
 }
 
 @media screen and (max-width: 767px){
