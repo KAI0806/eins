@@ -11,16 +11,31 @@
     position: absolute;
     top: 50%;
     right: 27.7rem;
-    font-size: 3.2rem;
-    line-height: 1.2;
+    font-size: 9.9rem;
+    line-height: .8;
     color: white;
     font-weight: normal;
+    font-family: 'Limelight', cursive;
+}
+
+#mv h1 > small{
+    font-family: "Yu Gothic", "游ゴシック体", "メイリオ", 'Meiryo', "Hiragino Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 3.2rem;
     text-shadow: 0 .3rem .6rem rgba(0, 0, 0, 56%);
+    vertical-align: super;
 }
 
 #mv h1 span{
-    font-size: 6rem;
-    font-family: 'Limelight';
+    letter-spacing: 2rem;
+    display: inline-block;
+    line-height: .5;
+}
+
+#mv h1 span small{
+    font-size: 2.8rem;
+    font-weight: bold;
+    letter-spacing: 1.5rem;
+    font-family: "Yu Gothic", "游ゴシック体", "メイリオ", 'Meiryo', "Hiragino Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 #mv h1::before{
@@ -30,7 +45,7 @@
     height: 6.47rem;
     bottom: 0;
     right: 0;
-    transform: translate(-10%, 50%);
+    transform: translate(100%, 0);
     background: url("../img/dog_icon.svg") no-repeat center center/contain;
 }
 
@@ -70,7 +85,7 @@
     top: 50%;
     color: white;
     font-size: 1.8rem;
-    font-family: 'Bebas Kai';
+    font-family: 'bebas-kai', sans-serif;
     width: max-content;
     transform: translate(-100%, -50%);
 }
@@ -95,7 +110,7 @@
 
 #concept h2{
     font-size: 5.2rem;
-    font-family: 'Bebas Kai';
+    font-family: bebas-kai, sans-serif;
     margin: 0 0 5rem 25.5rem;
     font-weight: normal;
     line-height: .5;
@@ -178,16 +193,16 @@
     width: 57.3%;
 }
 
-#concept .content02 p{
+#concept .content02 .wrap{
+    background: #B9DBF2;
     position: absolute;
     top: -5.8rem;
     right: 34.2rem;
     width: 43.9rem;
     padding: 12.2rem 6.3rem 4.9rem;
-    background: #B9DBF2;
 }
 
-#concept .content02 p::before{
+#concept .content02 .wrap::before{
     content: "";
     position: absolute;
     top: 0;
@@ -198,7 +213,7 @@
     background: url("../img/bone.svg") no-repeat center center/contain;
 }
 
-#concept .content02 p::after{
+#concept .content02 .wrap::after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -220,7 +235,7 @@
 
 #summary h2{
     font-size: 20rem;
-    font-family: 'Bebas Kai';
+    font-family: bebas-kai, sans-serif;
     font-weight: normal;
     text-align: right;
     margin-right: 9.3rem;
@@ -231,7 +246,7 @@
     font-size: 1.8rem;
     font-weight: normal;
     margin-right: 23.7rem;
-    font-weight: "メイリオ", 'Meiryo', "Yu Gothic", "游ゴシック体", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-family: "メイリオ", 'Meiryo', "Yu Gothic", "游ゴシック体", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 #summary .wrap{
@@ -260,7 +275,7 @@
     position: absolute;
     font-size: 16rem;
     font-weight: normal;
-    font-family: 'Bebas Kai';
+    font-family: bebas-kai, sans-serif;
     width: max-content;
     color: #FFFFFF;
     transform: rotateZ(90deg) translate(-8rem, -120%);
@@ -320,7 +335,7 @@
 #summary .wrap .right h3{
     text-align: right;
     font-size: 5.2rem;
-    font-family: 'Bebas Kai';
+    font-family: bebas-kai, sans-serif;
     font-weight: normal;
     line-height: .8;
     margin-bottom: 2.9rem;
@@ -374,7 +389,7 @@
 
 #recruit .wrap{
     width: 61.25%;
-    background: rgba(255, 255, 255, 70%);
+    background: url("../img/recruit_wrap_bg.svg") no-repeat center center/100%;
     padding: 10.9rem 0 14.1rem;
     display: flex;
     justify-content: center;
@@ -390,16 +405,16 @@
     height: 41.9rem;
     left: 0;
     top: 50%;
-    transform: translate(-10%, -50%);
+    transform: translate(2%, -50%);
     background: url("../img/conditions.svg") no-repeat center center/contain;
 }
 
 #recruit .wrap::after{
     content: "";
     position: absolute;
-    width: 82.61rem;
-    height: 15.48rem;
-    bottom: 0;
+    width: 80.61rem;
+    height: 13.48rem;
+    bottom: 1rem;
     left: 50%;
     filter: drop-shadow( -.2rem .1rem 0 #A3A7AB);
     transform: translateX(-48%);
@@ -413,6 +428,8 @@
 
 #recruit .wrap p{
     line-height: 2;
+    position: relative;
+    z-index: 10;
 }
 
 /* contact */
@@ -422,11 +439,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 16rem;
 }
 
 #contact h2{
     font-size: 4rem;
-    font-family: 'Bebas Kai';
+    font-family: bebas-kai, sans-serif;
     font-weight: normal;
     margin-bottom: 6.4rem;
 }
@@ -450,5 +468,465 @@
     margin: auto;
 }
 
+#contact form .row{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+#contact form .row label{
+    width: 31.4%;
+    font-size: 2.2rem;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2.84%;
+}
+
+#contact form .row label span{
+    width: 6.1rem;
+    padding: .5rem 0;
+    background: #B9DBF2;
+    color: white;
+    text-align: center;
+}
+
+#contact form .row input{
+    width: 65.76%;
+    font-size: 2.2rem;
+    border: solid .1rem #353535;
+    padding: 0;
+    height: 4.5rem;
+}
+
+.col-sm-10{
+    width: 38%;
+    position: relative;
+}
+
+#contact form .row select{
+    width: calc(100% - 1rem);
+    font-size: 2.2rem;
+    font-weight: normal;
+    border: solid .1rem #353535;
+    padding: 0 0 0 1rem;
+    height: 4.5rem;
+    position: relative;
+    -webkit-appearance: none;
+    appearance: none;
+    background: none;
+}
+
+select::-ms-expand {
+    display: none; /* デフォルトの矢印を非表示(IE用) */
+}
+
+#contact form .row .col-sm-10::before {
+    position: absolute;
+    content: "▼";
+    font-size: 2rem;
+    color: white;
+    background: #B9DBF2;
+    width: 4.5rem;
+    height: 4.5rem;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-23%);
+}
+
+#contact form .row textarea{
+    width: 65.76%;
+    height: 21.7rem;
+    padding: 0;
+    border: solid .1rem #353535;
+}
+
+#contact form button{
+    display: block;
+    width: 30rem;
+    padding: 1.15rem 0;
+    background: #B9DBF2;
+    color: white;
+    border: none;
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 4.1rem auto 0 auto;
+    transition: all .2s ease-in-out;
+}
+
+#contact form button:hover{
+    background: #DEB354;
+    color: #3F3A39;
+    transition: all .3s ease-in-out;
+}
+
 @media screen and (max-width: 767px){
+    #mv{
+        width: 100%;
+        height: 75.3rem;
+        margin: 0;
+        background: url("../img/mv_bg_sp.jpg") no-repeat center center/cover;
+    }
+
+    #mv h1{
+        top: 50%;
+        right: unset;
+        left: 50%;
+        font-size: 4.2rem;
+        line-height: 1.1;
+        text-align: center;
+        width: max-content;
+        transform: translate(-50%, -10%);
+    }
+    
+    #mv h1 > small{
+        font-size: 1.8rem;
+        vertical-align: super;
+        text-shadow: .3rem .3rem .3rem rgba(0, 0, 0, 56%);
+    }
+
+    #mv h1 span{
+        letter-spacing: 1rem;
+    }
+
+    #mv h1 span small{
+        font-size: 1.2rem;
+        letter-spacing: .7rem;
+    }
+    
+    #mv h1::before{
+        width: 3.2rem;
+        height: 2.38rem;
+        transform: translate(-10%, 40%);
+        background: url("../img/dog_icon.svg") no-repeat center center/contain;
+    }
+
+    #concept{
+        padding-top: 5rem;
+        margin-bottom: 6rem;
+        overflow: hidden;
+        padding-bottom: 25rem;
+    }
+
+    #concept::before{
+        width: 93.33%;
+        height: 73%;
+        left: 0;
+        top: 0;
+        background: #B9DBF2;
+        z-index: -1;
+    }
+
+    #concept h2{
+        font-size: 2.4rem;
+        margin: 0 0 5.3rem 2rem;
+        line-height: 1;
+    }
+
+    #concept h2 small{
+        font-size: 1.2rem;
+    }
+
+    #concept .content01 .wrap{
+        width: 23.2rem;
+        padding: 3.2rem 3.4rem 3rem;
+        margin-left: 0;
+    }
+
+    #concept .content01 .wrap::before{
+        width: 3.4rem;
+        height: 3.18rem;
+    }
+
+    #concept .content01 .wrap::after{
+        height: 17.864rem;
+        width: 26.5rem;
+        top: 11.9rem;
+        left: 0;
+        transform: translate(-18%, 75%);
+        z-index: 100;
+        background: url("../img/content01_txt_sp.svg") no-repeat center center/contain;
+    }
+
+    #concept .content01 .wrap h3{
+        font-size: 1.4rem;
+        line-height: 1.5;
+        margin-bottom: 1.8rem;
+    }
+
+    #concept .content01 picture::before{
+        height: 26.4rem;
+        transform: translate(70%, -65%);
+    }
+
+    #concept .content01 picture{
+        z-index: 1;
+        top: 33rem;
+    }
+
+    #concept .content02{
+        margin-top: 28rem;
+    }
+
+    #concept .content02 picture{
+        z-index: 1;
+    }
+
+    #concept .content02 picture img{
+        width: 68%;
+    }
+
+    #concept .content02 .wrap{
+        top: 29rem;
+        width: calc(95% - 8rem);
+        padding: 3.2rem 4rem 3.6rem;
+        right: 0;
+        z-index: -1;
+    }
+
+    #concept .content02 .wrap h3{
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 2.2rem;
+    }
+
+    #concept .content02 .wrap::before{
+        width: 3.2rem;
+        height: 2.38rem;
+    }
+
+    #concept .content02 .wrap::after{
+        width: 31rem;
+        height: 17.86rem;
+        bottom: 20rem;
+        left: unset;
+        right: 0;
+        transform: translate(35%, 15%);
+        z-index: 1;
+    }
+
+    /* summary */
+    #summary{
+        margin-top: 0;
+        overflow-x: hidden;
+        margin-bottom: 5.25rem;
+    }
+
+    #summary h2{
+        font-size: 5.2rem;
+        margin-right: 0;
+        margin-left: .6rem;
+        text-align: left;
+    }
+
+    #summary .wrap{
+        flex-direction: column;
+        width: 82.66%;
+        margin: 9.4rem 0 0 auto;
+        padding: 6.7rem 0 7.3rem;
+    }
+
+    #summary .wrap::before{
+        width: 100%;
+    }
+
+    #summary .wrap::after{
+        font-size: 9rem;
+        transform: rotateZ(90deg) translate(-8rem, -175%);
+        mix-blend-mode: overlay;
+    }
+
+    #summary .wrap .left{
+        width: 96.77%;
+    }
+
+    #summary .wrap .left::before{
+        display: none;
+    }
+
+    #summary .wrap .left::after{
+        width: 14.286rem;
+        height: 10.64rem;
+        transform: translate(-58%, -128%);
+    }
+
+    #summary .wrap .left h3{
+        font-size: 2.4rem;
+        font-family: bebas-kai, sans-serif;
+        font-weight: normal;
+        line-height: .8;
+        width: max-content;
+        text-align: center;
+        margin: 0 auto 4.4rem 8.8rem;
+    }
+
+    #summary .wrap .left h3 small{
+        font-size: 1.2rem;
+        font-family:  "Yu Gothic", "游ゴシック体", "メイリオ", 'Meiryo', "Hiragino Sans", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    }
+
+    #summary .wrap .left > div{
+        flex-direction: column;
+        padding-bottom: 1.1rem;
+        border-bottom: solid .1rem #707070;
+        margin-bottom: 1.6rem;
+    }
+
+    #summary .wrap .left > div h4{
+        font-size: 1.2rem;
+        margin-bottom: .9rem;
+    }
+
+    #summary .wrap .right{
+        margin-top: 1rem;
+    }
+
+    #summary .wrap .right::before{
+        content: "";
+        position: absolute;
+        width: 33.8rem;
+        height: 1.43rem;
+        background: url("../img/wave.svg") no-repeat center center/contain;
+        bottom: -5rem;
+        transform: translate(-33%, 50%);
+    }
+
+    #summary .wrap .right img{
+        width: 29.4rem;
+        transform: translateX(-8.1rem);
+    }
+
+    /* recruit */
+    #recruit{
+        border-top: solid 6.2rem #B9DBF2;
+        padding: 11.6rem 0;
+        background: url("../img/recruit_bg_sp.jpg") no-repeat center center/cover;
+        margin-bottom: 3rem;
+    }
+
+    #recruit::before{
+        width: 22.4rem;
+        height: 3.5rem;
+        z-index: -1;
+        top: -5.2rem;
+        transform: translateY(-100%);
+        left: -5.2rem;
+        background: url("../img/recruit_txt_sp.svg") no-repeat center center/contain;
+    }
+
+    #recruit::after{
+        width: 23.5rem;
+        height: 14.5rem;
+        right: 0;
+        top: 0;
+        transform: translateY(-50%);
+    }
+
+    #recruit .wrap{
+        width: 85.33%;
+        background: url("../img/recruit_wrap_bg_sp.svg") no-repeat center center/contain;
+    }
+
+    #recruit .wrap::before{
+        width: 3.67rem;
+        height: 19rem;
+        transform: translate(50%, -50%);
+    }
+
+    #recruit .wrap::after{
+        width: 89.69%;
+        height: 5.4rem;
+        bottom: 3.2rem;
+        transform: translateX(-50%);
+        filter: drop-shadow( -0.1rem 0.1rem 0 #A3A7AB);
+    }
+
+    #recruit .wrap h2{
+        font-size: 1.2rem;
+        margin-bottom: 3.83rem;
+    }
+
+    /* contact */
+    #contact{
+        margin-bottom: 8.5rem;
+    }
+
+    #contact h2{
+        font-size: 2.4rem;
+        margin-bottom: 1.7rem;
+    }
+
+    #contact > p:nth-child(4){
+        font-size: 1.2rem;
+        margin-bottom: 3.5rem;
+    }
+
+    #contact > p+p{
+        margin-top: 2rem;
+    }
+
+    #contact form{
+        width: 80%;
+    }
+
+    #contact form .row{
+        flex-direction: column;
+        margin-bottom: 1.7rem;
+    }
+
+    #contact form .row label{
+        width: 100%;
+        font-size: 1.2rem;
+        justify-content: flex-start;
+        margin-bottom: .7rem;
+    }
+
+    #contact form .row label span{
+        width: 3rem;
+        padding: .15rem 0;
+        margin-left: 1rem;
+    }
+
+    #contact form .row input{
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 0;
+        height: 2rem;
+    }
+
+    .col-sm-10{
+        width: 100%;
+    }
+
+    #contact form .row select{
+        width: 100%;
+        padding: 0;
+        font-size: 1.2rem;
+        text-align: center;
+        height: 2.8rem;
+    }
+
+    #contact form .row .col-sm-10::before{
+        height: 2.8rem;
+        width: 2.8rem;
+        transform: translateX(-3%);
+    }
+
+    #contact form .row textarea{
+        width: 100%;
+        height: 13.6rem;
+    }
+
+    #contact form button{
+        margin-top: 3rem;
+        width: 18rem;
+        font-size: 1.4rem;
+        padding: .8rem 0;
+    }
 }

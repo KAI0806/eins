@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>株式会社eins｜公式ホームページ</title>
 
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/ljs1qur.css">
+
+    <!-- css -->
     <link rel="stylesheet" href="assets/css/application.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -29,42 +36,48 @@
     <main>
         <section id="mv">
             <h1>
-                子犬専門ドッグウェア
-                <br/><span>LITTLE COSTUME</span>
-                <br/>可愛いだけじゃ、物足りない
+                <small>子犬専門ドッグウェア</small>
+                <br/><span>Litcos<br/><small>little+costume</small></span>
+                <br/><small>可愛いだけじゃ、物足りない</small>
             </h1>
 
-            <a class="scroll" href="#concept"></a>
+            <a class="scroll pc_only" href="#concept"></a>
         </section>
 
         <section id="concept">
-            <h2>LITOCOS CONCEPT<br/><small>コンセプト</small></h2>
+            <h2>LITOCOS CONCEPT<br/><small>リトコスの思い</small></h2>
 
             <div class="content01">
                 <div class="wrap">
-                    <h3>小さな家族と大きな絆のお手伝い</h3>
+                    <h3>小さな家族と<br class="sp_only"/><span class="sp_inline">　　　　</span>大きな絆のお手伝い</h3>
 
                     <p>
-                        一つ屋根の下で共に生活する事で、ペットは「家族」になります。
-                        <br/>そんな小さな家族に、服を通じて新しい愛情表現のお手伝いを。
+                        一つ屋根の下で共に生活する事で、<br class="sp_only"/>ペットは「家族」になります。
+                        <br/>そんな小さな家族に、<br class="sp_only"/>服を通じて新しい愛情表現のお手伝いを。
                     </p>
                 </div>
                 
                 <picture>
-                    <img src="assets/img/content01_img.jpg" alt="コンセプト1">
+                    <source srcset="assets/img/content01_img.jpg" media="(min-width: 767px)" />
+                    <img src="assets/img/content01_img_sp.jpg" alt="コンセプト1">
                 </picture>
             </div>
 
             <div class="content02">
                 <picture>
-                    <img src="assets/img/content02_img.jpg" alt="コンセプト2">
+                    <source srcset="assets/img/content02_img.jpg" media="(min-width: 767px)" />
+                    <img src="assets/img/content02_img_sp.jpg" alt="コンセプト2">
                 </picture>
 
-                <p>
-                    「かわいい」「かっこいい」「おしゃれ」
-                    <br/>子犬の表現の幅を広げるために、数多くの商品を取り扱っております。
-                    <br/>サイズがわからない、どんな服が似合うか教えてほしいなど、どんな些細なことでもお気軽にご相談ください。
-                </p>
+                <div class="wrap">
+                    <h3>ワガママを着こなそう</h3>
+
+                    <p>
+                        「かわいい」「かっこいい」「おしゃれ」
+                        <br/>子犬の表現の幅を広げるために、数多くの商品を取り扱っております。
+                        <br/>サイズがわからない、どんな服が似合うか教えてほしいなど、どんな些細なことでもお気軽にご相談ください。
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -72,15 +85,16 @@
             <h2><small>事業概要</small><br/>BUSINESS SUMMARY</h2>
             <div class="wrap">
                 <div class="left">
+                    <h3 class="sp_only">COMPANY<br/><small>会社概要</small></h3>
                     <div><h4>会社名</h4><p>株式会社eins</p></div>
                     <div><h4>代表名</h4><p>加藤 和明</p></div>
-                    <div><h4>事業名</h4><p>輸入・輸出事業、ペット事業<br/>トリミングサロン</p></div>
+                    <div><h4>事業名</h4><p>輸入・輸出事業、<br class="sp_only"/>ペット事業<br/>トリミングサロン</p></div>
                     <div><h4>所在地</h4><p>東京都世田谷区</p></div>
                     <div><h4>TEL</h4><p>6453-4368</p></div>
                 </div>
 
                 <div class="right">
-                    <h3>COMPANY<br/><small>会社概要</small></h3>
+                    <h3 class="pc_only">COMPANY<br/><small>会社概要</small></h3>
                     <picture>
                         <img src="assets/img/summary_img.jpg" alt="会社概要">
                     </picture>
@@ -90,14 +104,14 @@
 
         <section id="recruit">
             <div class="wrap">
-                <h2>募集要項</h2>
+                <h2>◆求人情報◆</h2>
 
                 <p>
                     【未経験大歓迎♪】
-                    <br/>LITOCOSは、一緒に働いてくれるオープニングスタッフを募集中です。
+                    <br/>LITOCOSは、一緒に働いてくれる<br class="sp_only"/>オープニングスタッフを募集中です。
                     <br/>学生や主婦の方、副業でも！
                     <br/>まずは簡単な作業から丁寧にお教えします。
-                    <br/>気になった方はぜひ、お気軽にお問い合わせください。
+                    <br/>気になった方はぜひ、<br class="sp_only"/>お気軽にお問い合わせください。
                 </p>
             </div>
         </section>
@@ -106,35 +120,35 @@
             <h2>CONTACT FORM</h2>
 
             <p>
-                株式会社einsへご興味をお持ちいただきましてありがとうございます。
+                株式会社einsへご興味をお持ちいただきまして<br class="sp_only"/>ありがとうございます。
                 <br/>以下よりお気軽にご相談ください。
             </p>
 
-            <p>受付時間　平日8:30～17:00（土・日曜、祝日、夏期、年末年始などはお休みをいただきます）</p>
+            <p>受付時間　平日8:30～17:00（土日祝除く）</p>
 
-            <p>※お問い合わせの内容により、返信させていただくまでにお時間を頂戴する場合や返信いたしかねる場合がございます。あらかじめご了承ください。</p>
+            <p>※お問い合わせの内容により、返信させていただくまで<br class="sp_only"/>にお時間を頂戴する場合がございます。<br class="sp_only"/>あらかじめご了承ください。</p>
 
             <form class="formrun" action="https://form.run/api/v1/r/0ieo89qmodshkn7qqh3dgoyt" method="post">
                 <!-- ↓自由に要素を追加・編集することができます -->
                 <div class="row">
-                  <label>お名前</label>
-                  <input name="お名前" type="text" data-formrun-required>
+                  <label for="name">お名前 <span>必須</span></label>
+                  <input id="name" name="お名前" type="text" data-formrun-required>
                 </div>
 
                 <div class="row">
-                    <label>フリガナ</label>
-                    <input name="フリガナ" type="text" data-formrun-required>
+                    <label for="kana">フリガナ <span>必須</span></label>
+                    <input id="kana" name="フリガナ" type="text" data-formrun-required>
                 </div>
               
                 <div class="row">
-                  <label>メールアドレス </label>
-                  <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
+                  <label for="mail">メールアドレス <span>必須</span></label>
+                  <input id="mail" name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
                 </div>
 
                 <div class="form-group row">
-                    <label class="col-sm-2">お問合せ種別</label>
+                    <label for="form_title" class="col-sm-2">お問合せ種別 <span>必須</span></label>
                     <div class="col-sm-10">
-                      <select class="form-control form-control-lg" name="お問合せ種別" data-formrun-required>
+                      <select id="form_title" class="form-control form-control-lg" name="お問合せ種別" data-formrun-required>
                         <option value>ー選択してくださいー</option>
                         <option value="商品に関してのお問合せ">商品に関してのお問合せ</option>
                         <option value="求人に関してのお問合せ">求人に関してのお問合せ</option>
@@ -144,8 +158,8 @@
                 </div>
               
                 <div class="row">
-                  <label>お問い合わせ内容</label>
-                  <textarea name="お問い合わせ内容"></textarea>
+                  <label for="form_detail">お問い合わせ内容</label>
+                  <textarea id="form_detail" name="お問い合わせ内容"></textarea>
                 </div>
               
                 <!-- ボット投稿をブロックするためのタグ -->
@@ -155,14 +169,13 @@
                   <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
                 </div>
               
-                <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信する</button>
+                <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
             </form> 
         </section>
     </main>
 
-    <a class="up" href="">BACK TO TOP</a>
-
     <footer>
+        <a class="up" href="#">▲<br/>BACK TO TOP</a>
         <p class="copy">&copy; CopyRight <script type="text/javascript">document.write(new Date().getFullYear());</script> eins co., ltd.</p>
     </footer>
 </body>
