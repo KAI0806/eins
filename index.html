@@ -15,6 +15,9 @@
     <!-- css -->
     <link rel="stylesheet" href="assets/css/application.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -25,16 +28,16 @@
         </div>
 
         <div class="pc_flex btn">
-            <a href="#mv"></a>
-            <a href="#concept"></a>
-            <a href="#summary"></a>
-            <a href="#recruit"></a>
-            <a href="#contact"></a>
+            <a class="header_btn btn01 is-active" href="#mv"></a>
+            <a class="header_btn btn02" href="#concept"></a>
+            <a class="header_btn btn03" href="#summary"></a>
+            <a class="header_btn btn04" href="#recruit"></a>
+            <a class="header_btn btn05" href="#contact"></a>
         </div>
     </header>
 
     <main>
-        <section id="mv">
+        <section id="mv" class="section01 scrollify">
             <h1>
                 <small>子犬専門ドッグウェア</small>
                 <br/><span>Litcos<br/><small>little+costume</small></span>
@@ -44,7 +47,7 @@
             <a class="scroll pc_only" href="#concept"></a>
         </section>
 
-        <section id="concept">
+        <section id="concept" class="section02 scrollify">
             <h2>LITOCOS CONCEPT<br/><small>リトコスの思い</small></h2>
 
             <div class="content01">
@@ -81,7 +84,7 @@
             </div>
         </section>
 
-        <section id="summary">
+        <section id="summary" class="section03 scrollify">
             <h2><small>事業概要</small><br/>BUSINESS SUMMARY</h2>
             <div class="wrap">
                 <div class="left">
@@ -102,7 +105,7 @@
             </div>
         </section>
 
-        <section id="recruit">
+        <section id="recruit" class="section04 scrollify">
             <div class="wrap">
                 <h2>◆求人情報◆</h2>
 
@@ -116,7 +119,7 @@
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="section05 scrollify">
             <h2>CONTACT FORM</h2>
 
             <p>
@@ -178,5 +181,8 @@
         <a class="up" href="#">▲<br/>BACK TO TOP</a>
         <p class="copy">&copy; CopyRight <script type="text/javascript">document.write(new Date().getFullYear());</script> eins co., ltd.</p>
     </footer>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/scrollify.js"></script>
 </body>
 </html>

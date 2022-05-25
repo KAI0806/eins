@@ -97,6 +97,15 @@ header .sns{
     margin-bottom: 6.7rem;
 }
 
+header .sns a{
+    transition: all .2s ease-in-out;
+}
+
+header .sns a:hover{
+    opacity: .5;
+    transition: all .3s ease-in-out;
+}
+
 header .sns a:first-child{
     margin-bottom: 4.16rem;
 }
@@ -123,6 +132,10 @@ header .btn a{
     margin-bottom: 5rem;
     background: url("../img/btn.svg") no-repeat center center/contain;
     transition: all .2s ease-in-out;
+}
+
+header .btn .is-active{
+    background: url("../img/btn_active.svg") no-repeat center center/contain;
 }
 
 header .btn a:hover{
