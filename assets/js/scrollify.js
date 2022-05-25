@@ -5,6 +5,7 @@ $.scrollify({
     scrollSpeed: 100, // スクロール時の速度
     updateHash: false, // スクロール時アドレスバーのURLを更新
     setHeights:false,
+    responsiveFallback:600,
     before:function(i,box){
         current = i;
     },
