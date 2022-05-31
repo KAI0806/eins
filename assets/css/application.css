@@ -145,6 +145,7 @@ header .btn a:hover{
 
 main{
     overflow-x: hidden;
+    will-change: transform,animation,position;
 }
 
 footer{
