@@ -63,7 +63,9 @@ $(window).scroll(function(){
     }
 })
 
-AOS.init({
-    duration: 800,
-    easing: 'ease-out',
+window.addEventListener('load', () => {
+    AOS.init({
+        duration: 800,
+        easing: 'ease-out',
+    });
 });
