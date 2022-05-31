@@ -647,11 +647,17 @@ select::-ms-expand {
     }
 
     #concept .content01 .wrap::after{
+        display: none;
+    }
+
+    #concept .content01 picture::after{
+        position: absolute;
+        content: "";
         height: 17.864rem;
         width: 26.5rem;
-        top: 11.9rem;
+        top: 0;
         left: 0;
-        transform: translate(-18%, 75%);
+        transform: translate(-78%, 41%);
         z-index: 100;
         background: url("../img/content01_txt_sp.svg") no-repeat center center/contain;
     }
@@ -664,7 +670,8 @@ select::-ms-expand {
 
     #concept .content01 picture::before{
         height: 26.4rem;
-        transform: translate(70%, -65%);
+        transform: translate(74%, -65%);
+        z-index: -1;
     }
 
     #concept .content01 picture{
