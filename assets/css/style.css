@@ -545,6 +545,7 @@ select::-ms-expand {
     width: 65.76%;
     height: 21.7rem;
     padding: 0;
+    border-radius: 0;
     border: solid .1rem #353535;
 }
 
