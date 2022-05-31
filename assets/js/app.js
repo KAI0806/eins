@@ -62,3 +62,7 @@ $(window).scroll(function(){
       // それ以外の動き
     }
 })
+
+AOS.init({
+    duration: 1000,
+});
